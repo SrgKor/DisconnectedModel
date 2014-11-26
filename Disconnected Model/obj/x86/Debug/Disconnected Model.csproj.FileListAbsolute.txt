@@ -1,0 +1,16 @@
+C:\Users\Сергей Королев\Documents\Visual Studio 2010\Projects\Disconnected Model\Disconnected Model\bin\Debug\Disconnected Model.exe
+C:\Users\Сергей Королев\Documents\Visual Studio 2010\Projects\Disconnected Model\Disconnected Model\bin\Debug\Disconnected Model.pdb
+C:\Users\Сергей Королев\Documents\Visual Studio 2010\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Сергей Королев\Documents\Visual Studio 2010\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Сергей Королев\Documents\Visual Studio 2010\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Сергей Королев\Documents\Visual Studio 2010\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Сергей Королев\Documents\Visual Studio 2010\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\Disconnected Model.exe
+C:\Users\Сергей Королев\Documents\Visual Studio 2010\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\Disconnected Model.pdb
+C:\Users\Сергей Королев\Documents\Visual Studio 2010\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Сергей\Documents\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\Disconnected Model.exe
+C:\Users\Сергей\Documents\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\Disconnected Model.pdb
+C:\Users\Сергей\Documents\Projects\Disconnected Model\Disconnected Model\bin\Debug\Disconnected Model.exe
+C:\Users\Сергей\Documents\Projects\Disconnected Model\Disconnected Model\bin\Debug\Disconnected Model.pdb
+C:\Users\Сергей\Documents\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Сергей\Documents\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Сергей\Documents\Projects\Disconnected Model\Disconnected Model\obj\x86\Debug\Disconnected Model.csproj.GenerateResource.Cache

@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="BANK" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="BANK" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:info="Developer: Sergey Korolev">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Debitors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msdata:Caption="Имя" type="xs:string" msdata:Ordinal="1" />
+              <xs:element name="Number" msdata:Caption="Номер" type="xs:int" msdata:Ordinal="2" />
+              <xs:element name="PhoneNumber" msdata:Caption="Телефон" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+            </xs:sequence>
+            <xs:attribute name="ID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:Caption="Ай Ди" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Credits">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:ReadOnly="true" msdata:Caption="Кредит ID" type="xs:string" />
+              <xs:element name="DebitorID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:Caption="Дебитор ID" type="xs:string" />
+              <xs:element name="Amount" msdata:Caption="Сумма" type="xs:int" />
+              <xs:element name="Balance" msdata:Caption="Баланс" type="xs:int" />
+              <xs:element name="OpeningDate" msdata:Caption="Дата" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Payments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:ReadOnly="true" msdata:Caption="Платеж ID" type="xs:string" />
+              <xs:element name="CreditID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:Caption="Кредит ID" type="xs:string" />
+              <xs:element name="Amount" msdata:Caption="Сумма платежа" type="xs:int" />
+              <xs:element name="PaymentDate" msdata:Caption="Дата платежа" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//Debitors" />
+      <xs:field xpath="@ID" />
+    </xs:unique>
+    <xs:unique name="Credits_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//Credits" />
+      <xs:field xpath="ID" />
+    </xs:unique>
+    <xs:unique name="Payments_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//Payments" />
+      <xs:field xpath="ID" />
+    </xs:unique>
+    <xs:keyref name="Credit_Payments" refer="Credits_Constraint1">
+      <xs:selector xpath=".//Payments" />
+      <xs:field xpath="CreditID" />
+    </xs:keyref>
+    <xs:keyref name="Debitor_Credits" refer="Constraint1">
+      <xs:selector xpath=".//Credits" />
+      <xs:field xpath="DebitorID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

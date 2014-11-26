@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<BANK>
+  <Debitors ID="3b89a36e-f7c0-44f8-86a3-1410a9e2bcf1">
+    <Name>Гудок Александр</Name>
+    <Number>2345</Number>
+    <PhoneNumber>+38 535 45 45</PhoneNumber>
+  </Debitors>
+  <Debitors ID="8bc87d6a-e37b-419d-876e-254f18e713a6">
+    <Name>Набоков Алексей Владимирович</Name>
+    <Number>3445</Number>
+    <PhoneNumber>8-903-232-44-32</PhoneNumber>
+  </Debitors>
+  <Debitors ID="f00d8075-84d9-45e1-b60c-80e4c6593eca">
+    <Name>Гриб Екатерина Сергеевна</Name>
+    <Number>9445</Number>
+    <PhoneNumber>8-(495)-157-2362</PhoneNumber>
+  </Debitors>
+  <Debitors ID="18e23ec9-3eef-4f6a-89dd-12260524e724">
+    <Name>Бруталова Инна Марковна</Name>
+    <Number>9435</Number>
+    <PhoneNumber>8-(123)-197-5562</PhoneNumber>
+  </Debitors>
+</BANK>
